@@ -1,5 +1,13 @@
+html {
+    height: 100%;
+    display: table;
+    margin: auto;
+}
+
 body {
-    background-color: beige;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
     margin: 0;
     line-height: normal;
 }
@@ -8,7 +16,7 @@ main {
     width: 80%;
     margin: 0 auto;
     background-color: white;
-    padding: 0;
+    padding: 10px auto;
     box-sizing: content-box;
 }
 
@@ -42,11 +50,11 @@ table {
 }
 
 thead {
-    background-color: #fdd;
+    background-color: rgb(198, 234, 255);
 }
 
 tfoot {
-    background-color: rgb(221, 255, 239);
+    background-color: rgb(198, 234, 255);
 }
 
 td {
@@ -58,5 +66,28 @@ td {
 th {
     border: 1px solid gray;
     padding: 10px;
+    text-align: center;
+}
+
+td.number {
+    text-align: right;
+}
+
+.red {
+    color: red;
+}
+
+
+caption {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    vertical-align: middle;
     text-align: center;
 }
